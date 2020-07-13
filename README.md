@@ -3,8 +3,8 @@
 Created by Trever Akumu
 
 ##  Description
--In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful?
--The pitches are organized by category
+- In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful?
+- The pitches are organized by category
 
 ## Requirements of the user
 * The user would like to see the pitches that other people have posted
@@ -22,3 +22,7 @@ Created by Trever Akumu
 * CSS
 * Heroku
 * Flask 
+
+## Licensing
+- The application is licensed under MIT license
+
