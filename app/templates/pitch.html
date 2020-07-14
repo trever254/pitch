@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+<!-- Content Block -->
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+            <h2>{{category.name|upper}}</h2>
+            <a class="btn btn-success" href="/category/view_pitch/{{pitches.category.id}}">Post</a>
+            <hr>
+        </div>
+    </div>    
+        {% if pitches %}
+        <div class="row">
+            <div class="col-8">
+                {{ macro.displayPitches(pitches)}}
+            </div>
+            <div class="col-4">
+                <p class="pitch">{{ pitch.comment }}</p>
+                <p class="ratings"><b>{{ pitch.vote_average}}</b><i>{{ pitch.vote_count }}votes</i></p>
+            </div>
+        </div>
+        {%else%}
+        <div class="well">
+          <h4 style="padding:10%; text-align:center; font-size:50px">No existing pitch in this category. </h4>
+        </div>
+  {% endif %}
+</div>
+
+{% endblock %}
