@@ -28,9 +28,9 @@ def create_app(config_name):
     # Initializing flask Extensions
     bootstrap.init_app(app)
     db.init_app(app)
-    login_manager.init_app(app)
-    mail.init_app(app)
-    # simple.init_app(app)
+    login_manager.init_app(app)from flask_mail import Message
+from flask import render_template
+from . import mail
 
     # Registering the blueprint
     from .main import main as main_blueprint
