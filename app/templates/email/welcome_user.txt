@@ -1,0 +1,4 @@
+Hello {{user.username}}
+Welcome to Pitch
+We have just seen you have registered to the pitch application.Feel
+free to add pitches and also comment other users pitches.
