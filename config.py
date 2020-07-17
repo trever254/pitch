@@ -2,7 +2,7 @@ import os
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://trever:password@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://trever:##@@trever254@localhost/pitch'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 # simple mde configurations
@@ -22,7 +22,7 @@ class ProdConfig(Config):
     DEBUG = True
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://trever:password@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://trever:##@@trever254@localhost/pitch'
     DEBUG = True
 
 config_options = {
