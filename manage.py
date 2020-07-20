@@ -7,7 +7,7 @@ from app.models import User, Pitch, Category, Vote, Comment
 app = create_app('production')
 
 manager = Manager(app)
-migrate = Migrate(app.db)
+migrate = Migrate(app,db)
 
 manager.add_command('server',Server)
 manager.add_command('db',MigrateCommand)
